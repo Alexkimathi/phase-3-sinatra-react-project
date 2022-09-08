@@ -3,6 +3,7 @@ require "sinatra/activerecord/rake"
 
 desc "Start the server"
 task :server do  
+  exec "rerun -b 'rackup config.ru'"
   if ActiveRecord::Base.connection.migration_context.needs_migration?
     puts "Migrations are pending. Make sure to run `rake db:migrate` first."
     return
