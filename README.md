@@ -32,13 +32,13 @@ For this project, you must:
 For example, build a todo list application with a React frontend interface and a
 Sinatra backend API, where a user can:
 
-- **Create** a new todo
-- **Read** a list of all todos
-- **Update** an individual todo
-- **Delete** a todo
+- **Create** a new art
+- **Read** a list of all arts
+- **Update** an individual art
+- **Delete** a art
 
-A `Todo` can be tagged with a `Category`, so that each todo _belongs to_ a
-category and each category _has many_ todos.
+A `art` can be tagged with a `review`, so that each art _belongs to_ a
+review and each art _has many_ reviews.
 
 ## Getting Started
 
@@ -53,7 +53,7 @@ before cloning it. You can do this by using the link above or by clicking the
 "Octocat" button at the top of this page, then clicking "Fork" in the upper
 right corner of the repo page.
 
-[fork link]: https://github.com/learn-co-curriculum/phase-3-sinatra-react-project/fork
+[fork link]: https://github.com/Alexkimathi/phase-3-sinatra-react-project
 
 The `app/controllers/application_controller.rb` file has an example GET route
 handler. Replace this route with routes for your project.
@@ -89,7 +89,7 @@ Your React app should make fetch requests to your Sinatra backend! Here's an
 example:
 
 ```js
-fetch("http://localhost:9292/test")
+fetch("http://localhost:9292/arts")
   .then((r) => r.json())
   .then((data) => console.log(data));
 ```
